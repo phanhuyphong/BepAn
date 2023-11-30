@@ -121,7 +121,7 @@ include_once 'product-action.php'; //including controller
                                 <h6><a
                                         href="#"><?php echo $rows['title']; ?></a>
                                 </h6>
-                                <p><?php echo $rows['address']; ?></p>
+                                <!-- <p><?php echo $rows['address']; ?></p> -->
                                 <ul class="nav nav-inline">
                                     <li class="nav-item"> <a
                                             class="nav-link active" href="#"><i
@@ -215,7 +215,7 @@ $item_total = 0;
                         </div>
 
                         <!-- end:Order row -->
-
+                        
                         <div class="widget-body">
                             <div class="price-wrap text-xs-center">
                                 <p>Tổng Tiền</p>
@@ -223,9 +223,9 @@ $item_total = 0;
                                     <strong><?php echo $item_total." đ"; ?></strong>
                                 </h3>
                                 <p>Ưu đãi Free Ship</p>
-                                <a href="checkout.php?res_id=<?php echo $_GET['res_id'];?>&action=check"
-                                    class="btn theme-btn btn-lg button">Đặt
-                                    Hàng</a>
+                                <a href="checkout.php?res_id=<?php
+                                            echo $_GET['res_id'];?>&action=check"
+                                    class="btn theme-btn btn-lg button">Đặt Hàng</a>
                             </div>
                         </div>
 
