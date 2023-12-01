@@ -174,8 +174,7 @@ session_start();
 
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Danh sách các nhà hàng
-                                </h4>
+                                
                                 <h6 class="card-subtitle">Export data to Copy,
                                     CSV, Excel, PDF & Print</h6>
 
@@ -185,15 +184,10 @@ session_start();
                                         cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>Danh mục</th>
-                                                <th>Tên Nhà Hàng</th>
-                                                <th>Email</th>
-                                                <th>Số Điện Thoại</th>
-                                                <th>Url</th>
+                                                <th>Thứ ngày</th>
                                                 <th>Open Hrs</th>
                                                 <th>Close Hrs</th>
                                                 <th>Open Days</th>
-                                                <th>Địa chỉ</th>
                                                 <th>Store-Image</th>
                                                 <th>Date</th>
                                                 <th>Action</th>
@@ -221,18 +215,14 @@ session_start();
 																					$res=mysqli_query($db,$mql);
 																					$row=mysqli_fetch_array($res);
 																				
-																					echo ' <tr><td>'.$row['c_name'].'</td>
+																					echo ' <tr>
 																								<td>'.$rows['title'].'</td>
-																								<td>'.$rows['email'].'</td>
-																								<td>'.$rows['phone'].'</td>
-																								<td>'.$rows['url'].'</td>
-																								
-																								
+
 																								<td>'.$rows['o_hr'].'</td>
 																								<td>'.$rows['c_hr'].'</td>
 																								<td>'.$rows['o_days'].'</td>
 																								
-																								<td>'.$rows['address'].'</td>
+																								
 																								
 																								<td><div class="col-md-3 col-lg-8 m-b-10">
 																								<center><img src="Res_img/'.$rows['image'].'" class="img-responsive radius"  style="min-width:150px;min-height:100px;"/></center>

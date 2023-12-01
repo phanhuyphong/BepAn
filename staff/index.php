@@ -7,16 +7,22 @@ session_start();
 if (isset($_POST['submit'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
+	$role = $_POST['role'];
 
 	if (!empty($_POST["submit"])) {
-		$loginquery = "SELECT * FROM admin WHERE username='$username' && password='" . md5($password) . "'";
+		$loginquery = "SELECT * FROM staff WHERE username='$username' && password='" . md5($password) . "' && role ='$role'";
 		$result = mysqli_query($db, $loginquery);
 		$row = mysqli_fetch_array($result);
 
-		if (is_array($row)) {
-			$_SESSION["adm_id"] = $row['adm_id'];
+		if (is_array($row) && $_POST['role'] =='nvpv') {
+			$_SESSION["staff_id"] = $row['staff_id'];
 			header("refresh:1;url=dashboard.php");
-		} else {
+		}
+		elseif(is_array($row) && $_POST['role'] == 'nvb') {
+			$_SESSION["staff_id"] = $row['staff_id'];
+			header("refresh:1;url=dashboard_chef.php");
+		}
+		else {
 			$message = "Invalid Username or Password!";
 		}
 	}
@@ -99,22 +105,18 @@ if (isset($_POST['submit1'])) {
 	<div class="form">
 		<div class="thumbnail" style ="background: #e5e551;"><img src="images/manager.png" /></div>
 
-		<form class="register-form" action="index.php" method="post">
-			<input type="text" placeholder="username" name="cr_user" />
-			<input type="text" placeholder="email address" name="cr_email" />
-			<input type="password" placeholder="password" name="cr_pass" />
-			<input type="password" placeholder="Confirm password" name="cr_cpass" />
-			<input type="password" placeholder="Unique-Code" name="code" />
-			<input type="submit" name="submit1" value="Create" />
-			<p class="message">Already registered? <a href="#">Sign In</a></p>
-		</form>
 		<span style="color:red;"><?php echo $message; ?></span>
 		<span style="color:green;"><?php echo $success; ?></span>
 		<form class="login-form" action="index.php" method="post">
 			<input type="text" placeholder="username" name="username" />
 			<input type="password" placeholder="password" name="password" />
+			<table>
+			<tr>
+				<td><input type="radio" name="role" value="nvpv">NVPV</td>
+				<td><input type="radio" name="role" value="nvb">Bếp</td>
+			</tr>
+			</table>
 			<input type="submit" name="submit" value="login" style="background: #e5e551;"/>
-			<p class="message">Not registered? <a href="#" style="color:#e5e551">Create an account</a>
 			</p>
 		</form>
 

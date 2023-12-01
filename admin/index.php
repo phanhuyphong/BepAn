@@ -104,7 +104,7 @@ if (isset($_POST['submit1'])) {
 			<input type="text" placeholder="email address" name="cr_email" />
 			<input type="password" placeholder="password" name="cr_pass" />
 			<input type="password" placeholder="Confirm password" name="cr_cpass" />
-			<input type="password" placeholder="Unique-Code" name="code" />
+			<!-- <input type="password" placeholder="Unique-Code" name="code" /> -->
 			<input type="submit" name="submit1" value="Create" />
 			<p class="message">Already registered? <a href="#">Sign In</a></p>
 		</form>
