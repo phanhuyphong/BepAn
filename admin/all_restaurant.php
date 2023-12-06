@@ -121,6 +121,8 @@ session_start();
                                     class="fa fa-user f-s-20 color-warning"></i><span
                                     class="hide-menu">Tài khoản</span></a>
                             <ul aria-expanded="false" class="collapse">
+                            <li><a href="all_staff.php">Danh sách nhân viên
+                                        </a></li>
                                 <li><a href="all_users.php">Danh sách tài
                                         khoản</a></li>
                                 <li><a href="add_users.php">Thêm tài khoản</a>

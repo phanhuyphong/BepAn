@@ -24,8 +24,7 @@ session_start();
 
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none"
-                stroke-width="2" stroke-miterlimit="10" />
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
         </svg>
     </div>
     <div id="main-wrapper">
@@ -35,8 +34,7 @@ session_start();
                 <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
 
-                        <span><img src="images/koji.png" alt="homepage"
-                                class="dark-logo" style="width: 70px" /></span>
+                        <span><img src="images/koji.png" alt="homepage" class="dark-logo" style="width: 70px" /></span>
                     </a>
                 </div>
                 <div class="navbar-collapse">
@@ -54,8 +52,7 @@ session_start();
 
                         <li class="nav-item dropdown">
 
-                            <div
-                                class="dropdown-menu dropdown-menu-right mailbox animated zoomIn">
+                            <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn">
                                 <ul>
                                     <li>
                                         <div class="drop-title">Notifications
@@ -63,11 +60,9 @@ session_start();
                                     </li>
 
                                     <li>
-                                        <a class="nav-link text-center"
-                                            href="javascript:void(0);">
+                                        <a class="nav-link text-center" href="javascript:void(0);">
                                             <strong>Check all
-                                                notifications</strong> <i
-                                                class="fa fa-angle-right"></i>
+                                                notifications</strong> <i class="fa fa-angle-right"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -76,16 +71,10 @@ session_start();
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted  "
-                                href="#" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"><img
-                                    src="images/bookingSystem/user-icn.png"
-                                    alt="user" class="profile-pic" /></a>
-                            <div
-                                class="dropdown-menu dropdown-menu-right animated zoomIn">
+                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/bookingSystem/user-icn.png" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
-                                    <li><a href="logout.php"><i
-                                                class="fa fa-power-off"></i>
+                                    <li><a href="logout.php"><i class="fa fa-power-off"></i>
                                             Logout</a></li>
                                 </ul>
                             </div>
@@ -103,16 +92,12 @@ session_start();
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a href="dashboard.php"><i
-                                    class="fa fa-tachometer"></i><span>Dashboard</span></a>
+                        <li> <a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
                         </li>
                         <li class="nav-label">Hệ thống quản lý</li>
-                        <li> <a class="has-arrow  " href="#"
-                                aria-expanded="false"><i
-                                    class="fa fa-user f-s-20 color-warning"></i><span
-                                    class="hide-menu">Tài khoản</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-user f-s-20 color-warning"></i><span class="hide-menu">Tài khoản</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="all_staff.php">Danh sách nhân viên
+                            <li><a href="all_staff.php">Danh sách nhân viên
                                         </a></li>
                                 <li><a href="all_users.php">Danh sách tài
                                         khoản</a></li>
@@ -121,20 +106,14 @@ session_start();
 
                             </ul>
                         </li>
-                        <li> <a class="has-arrow  " href="#"
-                                aria-expanded="false"><i
-                                    class="fa fa-archive f-s-20 color-warning"></i><span
-                                    class="hide-menu">Danh mục</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Danh mục</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="all_restaurant.php">Danh sách</a></li>
-                                
+
 
                             </ul>
                         </li>
-                        <li> <a class="has-arrow  " href="#"
-                                aria-expanded="false"><i class="fa fa-cutlery"
-                                    aria-hidden="true"></i><span
-                                    class="hide-menu">Món ăn</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Món ăn</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="all_menu.php">Danh sách món ăn</a>
                                 </li>
@@ -143,9 +122,7 @@ session_start();
 
                             </ul>
                         </li>
-                        <li> <a href="all_orders.php"><i
-                                    class="fa fa-shopping-cart"
-                                    aria-hidden="true"></i><span>Đơn
+                        <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Đơn
                                     hàng</span></a></li>
 
                     </ul>
@@ -169,17 +146,16 @@ session_start();
                                 </div>
 
                                 <div class="table-responsive m-t-40">
-                                    <table id="myTable"
-                                        class="table table-bordered table-striped table-hover">
+                                    <table id="myTable" class="table table-bordered table-striped table-hover">
                                         <thead class="thead-dark">
                                             <tr>
                                                 <th>Tên đăng nhập</th>
-                                                <th>Họ</th>
+                                                <th>ID</th>
+                                                <th>Password</th>
                                                 <th>Tên</th>
-                                                <th>Email</th>
-                                                <th>Số Điện Thoại</th>
-                                                <th>Địa Chỉ</th>
-                                                <th>Reg-Date</th>
+                                                <th>Giới tính</th>
+                                                <th>Số điện thoại</th>
+                                                <th>Role</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -187,7 +163,7 @@ session_start();
 
 
                                             <?php
-                                            $sql = "SELECT * FROM users order by u_id desc";
+                                            $sql = "SELECT * FROM staff order by staff_id desc";
                                             $query = mysqli_query($db, $sql);
 
                                             if (!mysqli_num_rows($query) > 0) {
@@ -198,23 +174,18 @@ session_start();
 
 
                                                     echo ' <tr><td>' . $rows['username'] . '</td>
-																								<td>' . $rows['f_name'] . '</td>
-																								<td>' . $rows['l_name'] . '</td>
-																								<td>' . $rows['email'] . '</td>
+																								<td>' . $rows['staff_id'] . '</td>
+																								<td>' . $rows['password'] . '</td>
+																								<td>' . $rows['staff_name'] . '</td>
+																								<td>' . $rows['gender'] . '</td>
 																								<td>' . $rows['phone'] . '</td>
-																								<td>' . $rows['address'] . '</td>																								
-																								<td>' . $rows['date'] . '</td>
-																									 <td><a style="font-size:16px"; onclick ="return Del()" href="delete_users.php?user_del=' . $rows['u_id'] . '"class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i class="fa fa-trash-o"></i></i></a> 
+                                                                                                <td>' .$rows['role'].'</td>
+																									 <td><a href="delete_users.php?user_del=' . $rows['u_id'] . '" class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i class="fa fa-trash-o" style="font-size:16px"></i></a> 
 																									 <a href="update_users.php?user_upd=' . $rows['u_id'] . '" " class="btn btn-info btn-flat btn-addon btn-sm m-b-10 m-l-5"><i class="fa fa-edit"></i></a>
 																									</td></tr>';
-                                                                                                
                                                 }
                                             }
-                                            
                                             ?>
-                                            <script> function Del(){
-                                                return confirm('Are you sure?');
-                                            }</script>
                                         </tbody>
                                     </table>
                                 </div>

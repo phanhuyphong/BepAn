@@ -308,7 +308,7 @@ session_start();
 																			  }
 																			   if($status=="in process")
 																			 { ?>
-                                                <td>
+                                                <!-- <td>
                                                     <center><button
                                                             type="button"
                                                             class="btn btn-warning"><span
@@ -316,7 +316,7 @@ session_start();
                                                                 aria-hidden="true"></span>Đang
                                                             vận chuyển!</button>
                                                     </center>
-                                                </td>
+                                                </td> -->
                                                 <?php
 																				}
 																			if($status=="closed")
@@ -328,8 +328,8 @@ session_start();
                                                             class="btn btn-primary"><span
                                                                 class="fa fa-check-circle"
                                                                 aria-hidden="true"></span>
-                                                            Đã giao
-                                                            hàng</button>
+                                                            Đã nhận
+                                                            </button>
                                                     </center>
                                                 </td>
                                                 <?php 

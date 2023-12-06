@@ -134,8 +134,8 @@ if (strlen($_SESSION['user_id']) == 0) {
             <td><b>Status</b></td>
             <td><select name="status" required="required">
                 <option value="">Select Status</option>
-                <option value="in process">Đang vận chuyển</option>
-                <option value="closed">Đã giao hàng</option>
+                <!-- <option value="in process">Đang vận chuyển</option> -->
+                <option value="closed">Đã nhận</option>
                 <option value="rejected">Đã hủy</option>
 
               </select></td>

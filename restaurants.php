@@ -153,7 +153,7 @@ while ($rows = mysqli_fetch_array($ress))
 															</div>
 															<!-- end:Logo -->
 															<div class="entry-dscr">
-																<h5><a href="dishes.php?res_id=' . $rows['rs_id'] . '" >' . $rows['title'] . '</a></h5> <span>' . $rows['address'] . ' <a href="#">...</a></span>
+																<h5><a href="dishes.php?res_id=' . $rows['rs_id'] . '" >' . $rows['title'] . '</a></h5> 
 																<ul class="list-inline">
 																	<li class="list-inline-item"><i class="fa fa-check"></i> Min $ 10,00</li>
 																	<li class="list-inline-item"><i class="fa fa-motorcycle"></i> 30 min</li>
@@ -203,7 +203,7 @@ while ($rows = mysqli_fetch_array($ress))
                     <ul>
                         <li><a href="#">07:30 - 01:30PM</a> </li>
                         <li><a href="#">Monday - Friday</a> </li>
-                    </ul>
+                    </ul>  
                 </div>
                 <div class="col-xs-12 col-sm-2 pages color-gray">
                     <h5>Theo dõi chúng tôi</h5>

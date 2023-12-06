@@ -267,19 +267,7 @@ session_start();
                                                             duyệt</button>
                                                     </center>
                                                 </td>
-                                                <?php 
-																			  }
-																			   if($status=="in process")
-																			 { ?>
-                                                <td>
-                                                    <center><button
-                                                            type="button"
-                                                            class="btn btn-warning"><span
-                                                                class="fa fa-cog fa-spin"
-                                                                aria-hidden="true"></span>Đang
-                                                            vận chuyển!</button>
-                                                    </center>
-                                                </td>
+                                                
                                                 <?php
 																				}
 																			if($status=="closed")
@@ -291,8 +279,8 @@ session_start();
                                                             class="btn btn-primary"><span
                                                                 class="fa fa-check-circle"
                                                                 aria-hidden="true"></span>
-                                                            Đã giao
-                                                            hàng</button>
+                                                            Đã nhận
+                                                            </button>
                                                     </center>
                                                 </td>
                                                 <?php 

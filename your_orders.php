@@ -336,12 +336,12 @@ and also iPads specifically.
                                                 }
                                                 if ($status == "in process")
                                                 { ?>
-                                                <button type="button"
+                                                <!-- <button type="button"
                                                     class="btn btn-warning"><span
                                                         class="fa fa-cog fa-spin"
                                                         aria-hidden="true"></span>Đang
                                                     vận
-                                                    chuyển!</button>
+                                                    chuyển!</button> -->
                                                 <?php
                                                                 }
                                                                 if ($status == "closed")
@@ -351,8 +351,8 @@ and also iPads specifically.
                                                     class="btn btn-success"><span
                                                         class="fa fa-check-circle"
                                                         aria-hidden="true">Đã
-                                                        giao
-                                                        hàng</button>
+                                                        nhận
+                                                        </button>
                                                 <?php
                                                                 }
                                                 ?>

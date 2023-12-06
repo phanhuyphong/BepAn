@@ -114,6 +114,8 @@ session_start();
                                     class="fa fa-user f-s-20 color-warning"></i><span
                                     class="hide-menu">Tài khoản</span></a>
                             <ul aria-expanded="false" class="collapse">
+                            <li><a href="all_staff.php">Danh sách nhân viên
+                                        </a></li>
                                 <li><a href="all_users.php">Danh sách tài
                                         khoản</a></li>
                                 <li><a href="add_users.php">Thêm tài khoản</a>
@@ -226,12 +228,12 @@ session_start();
 																			  }
 																			   if($status=="in process")
 																			 { ?>
-                                            <td> <button type="button"
+                                            <!-- <td> <button type="button"
                                                     class="btn btn-warning"><span
                                                         class="fa fa-cog fa-spin"
                                                         aria-hidden="true"></span>
                                                     Đang vận chuyển!</button>
-                                            </td>
+                                            </td> -->
                                             <?php
 																				}
 																			if($status=="closed")
@@ -241,7 +243,7 @@ session_start();
                                                     class="btn btn-primary"><span
                                                         class="fa fa-check-circle"
                                                         aria-hidden="true"></span>
-                                                    Đã giao hàng</button></td>
+                                                    Đã nhận</button></td>
                                             <?php 
 																			} 
 																			?>
