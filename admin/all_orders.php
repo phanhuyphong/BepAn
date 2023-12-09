@@ -193,7 +193,7 @@ session_start();
 
 
                                             <?php
-												$sql="SELECT users.*, users_orders.* FROM users INNER JOIN users_orders ON users.u_id=users_orders.u_id ";
+												$sql="SELECT users.*, users_orders.* FROM users INNER JOIN users_orders ON users.u_id=users_orders.u_id order by users_orders.date desc";
 												$query=mysqli_query($db,$sql);
 												
 													if(!mysqli_num_rows($query) > 0 )
@@ -297,7 +297,7 @@ session_start();
     </div>
 
 
-    <footer class="footer"></footer>
+    <footer class="footer"> DHHTTT16A - TREE </footer>
 
     </div>
 

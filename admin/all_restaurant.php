@@ -258,7 +258,7 @@ session_start();
     </div>
     <!-- End Container fluid  -->
     <!-- footer -->
-    <footer class="footer"> © 2023 - Team Pixel </footer>
+    <footer class="footer"> DHHTTT16A - TREE </footer>
     <!-- End footer -->
     </div>
     <!-- End Page wrapper  -->

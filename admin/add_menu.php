@@ -234,7 +234,7 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
             </div>
-            <footer class="footer"> DHHTTT16A - Nhóm TREE </footer>
+            <footer class="footer"> DHHTTT16A - TREE </footer>
         </div>
     </div>
     </div>

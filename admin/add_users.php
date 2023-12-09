@@ -334,7 +334,7 @@ if (isset($_POST['submit'])) {
 
                 </div>
             </div>
-            <footer class="footer"> © 2023- Team Pixel </footer>
+            <footer class="footer"> DHHTTT16A - TREE </footer>
         </div>
     </div>
     </div>

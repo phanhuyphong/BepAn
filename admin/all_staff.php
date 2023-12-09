@@ -150,12 +150,10 @@ session_start();
                                         <thead class="thead-dark">
                                             <tr>
                                                 <th>Tên đăng nhập</th>
-                                                <th>ID</th>
-                                                <th>Password</th>
                                                 <th>Tên</th>
                                                 <th>Giới tính</th>
                                                 <th>Số điện thoại</th>
-                                                <th>Role</th>
+                                                <th>Chức vụ</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -174,8 +172,6 @@ session_start();
 
 
                                                     echo ' <tr><td>' . $rows['username'] . '</td>
-																								<td>' . $rows['staff_id'] . '</td>
-																								<td>' . $rows['password'] . '</td>
 																								<td>' . $rows['staff_name'] . '</td>
 																								<td>' . $rows['gender'] . '</td>
 																								<td>' . $rows['phone'] . '</td>
@@ -199,7 +195,7 @@ session_start();
     </div>
 
     </div>
-    <footer class="footer"> © 2023 - Team Pixel </footer>
+    <footer class="footer"> DHHTTT16A - TREE </footer>
 
     </div>
 

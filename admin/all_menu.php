@@ -241,7 +241,7 @@ session_start();
 
     </div>
 
-    <footer class="footer"> DHHTTT16A - Nhóm TREE </footer>
+    <footer class="footer"> DHHTTT16A - TREE </footer>
 
     </div>
 
