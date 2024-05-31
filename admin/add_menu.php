@@ -132,6 +132,7 @@ if (isset($_POST['submit'])) {
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="all_staff.php">Danh sách nhân viên
                                         </a></li>
+                                <li><a href="add_staff.php">Thêm nhân viên</a>
                                 <li><a href="all_users.php">Danh sách tài
                                         khoản</a></li>
                                 <li><a href="add_users.php">Thêm tài khoản</a>
@@ -173,20 +174,53 @@ if (isset($_POST['submit'])) {
                             <form action='' method='post' enctype="multipart/form-data">
                                 <div class="form-body">
                                     <hr>
-                                    <div class="row p-t-20">
-                                        <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12">
                                             <div class="form-group">
-                                                <label class="control-label">Tên
-                                                    món</label>
-                                                <input type="text" name="d_name" class="form-control">
+                                                <label class="control-label">Tên món ăn
+                                                    </label>
+                                                <select name="d_name" class="form-control custom-select" data-placeholder="" tabindex="1">
+                                                    <option>Lựa chọn món ăn
+                                                        </option>
+                                                    <?php $ssql = "select * from dishes";
+                                                    $res = mysqli_query($db, $ssql);
+                                                    while ($row = mysqli_fetch_array($res)) {
+                                                        echo ' <option value="' . $row['d_id'] . '">' . $row['title'] . '</option>';
+                                                    }
+                                                    
+                                                    ?>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group has-danger">
-                                                <label class="control-label">Mô
-                                                    tả</label>
-                                                <input type="text" name="about" class="form-control form-control-danger">
-                                            </div>
+                                            <label class="control-label">Mô tả
+                                                    </label>
+                                                    <?php
+                                                        $ssql = "select * from dishes";
+                                                        $res = mysqli_query($db, $ssql);
+                                                        while ($row = mysqli_fetch_array($res)) {
+                                                            while($row = mysqli_fetch_assoc($res)){
+                                                                $tenMon = $row['title'];
+                                                                $slogan = $row['slogan'];
+                                                            }    
+                                                        }
+                                                    ?>
+                                                    <table>
+                                                        <tr>
+                                                            <td>Tên món</td>
+                                                            <td>
+                                                                <input type="text" name="title" id="" value="<?php echo $tenMon; ?>">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td>Mô tả</td>
+                                                            <td>
+                                                                <input type="text" name="slogan" id="" value="<?php echo $slogan; ?>">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                            
                                         </div>
                                     </div>
                                     <div class="row p-t-20">

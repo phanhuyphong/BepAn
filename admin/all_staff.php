@@ -99,6 +99,7 @@ session_start();
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="all_staff.php">Danh sách nhân viên
                                         </a></li>
+                                <li><a href="add_staff.php">Thêm nhân viên</a>
                                 <li><a href="all_users.php">Danh sách tài
                                         khoản</a></li>
                                 <li><a href="add_users.php">Thêm tài khoản</a>
@@ -176,12 +177,15 @@ session_start();
 																								<td>' . $rows['gender'] . '</td>
 																								<td>' . $rows['phone'] . '</td>
                                                                                                 <td>' .$rows['role'].'</td>
-																									 <td><a href="delete_users.php?user_del=' . $rows['u_id'] . '" class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i class="fa fa-trash-o" style="font-size:16px"></i></a> 
-																									 <a href="update_users.php?user_upd=' . $rows['u_id'] . '" " class="btn btn-info btn-flat btn-addon btn-sm m-b-10 m-l-5"><i class="fa fa-edit"></i></a>
+                                                                                                <td><a style="font-size:16px"; onclick ="return Del()" href="delete_staff.php?staff_del=' . $rows['staff_id'] . '"class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i class="fa fa-trash-o"></i></i></a> 
+                                                                                                <a href="update_users.php?user_upd=' . $rows['u_id'] . '" " class="btn btn-info btn-flat btn-addon btn-sm m-b-10 m-l-5"><i class="fa fa-edit"></i></a>
 																									</td></tr>';
                                                 }
                                             }
                                             ?>
+                                            <script> function Del(){
+                                                return confirm('Are you sure?');
+                                            }</script>
                                         </tbody>
                                     </table>
                                 </div>

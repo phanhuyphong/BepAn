@@ -100,6 +100,9 @@ if (isset($_POST['submit'])) {
                                     class="hide-menu">Tài
                                     khoản</span></a>
                             <ul aria-expanded="false" class="collapse">
+                            <li><a href="all_staff.php">Danh sách nhân viên
+                                        </a></li>
+                                <li><a href="add_staff.php">Thêm nhân viên</a>
                                 <li><a href="all_users.php">Danh sách tài
                                         khoản</a></li>
                                 <li><a href="add_users.php">Thêm tài khoản</a>

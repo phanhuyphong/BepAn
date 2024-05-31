@@ -90,9 +90,10 @@ else
                                     class="fa fa-user f-s-20 color-warning"></i><span
                                     class="hide-menu">Tài khoản</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="all_users.php">Danh sách tài
-                                        khoản</a></li>
-                                <li><a href="all_staff.php">Danh sách nhân viên</a></li>
+                            <li><a href="all_staff.php">Danh sách nhân viên
+                                        </a></li>
+                                <li><a href="add_staff.php">Thêm nhân viên</a>
+                                <li><a href="all_users.php">Danh sách tài khoản</a></li>
                                 <li><a href="add_users.php">Thêm tài khoản</a>
                                 </li>
 
@@ -119,6 +120,7 @@ else
 
                             </ul>
                         </li>
+                        <li> <a  href="statistics_venue.php" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">thống kê</span></a>
                         <li> <a href="all_orders.php"><i
                                     class="fa fa-shopping-cart"
                                     aria-hidden="true"></i><span>Đơn

@@ -143,6 +143,7 @@ session_start();
                                         class="table table-bordered table-striped">
                                         <thead class="thead-dark">
                                             <tr>
+                                                <th>Mã món ăn</th>
                                                 <th>Tên người dùng</th>
                                                 <th>Tên món</th>
                                                 <th>Số Lượng</th>
@@ -158,7 +159,7 @@ session_start();
 
 
                                             <?php
-												$sql="SELECT users.*, users_orders.* FROM users INNER JOIN users_orders ON users.u_id=users_orders.u_id ";
+												$sql="SELECT users.*, users_orders.* FROM users INNER JOIN users_orders ON users.u_id=users_orders.u_id order by users_orders.date desc";
 												$query=mysqli_query($db,$sql);
 												
 													if(!mysqli_num_rows($query) > 0 )
@@ -173,6 +174,7 @@ session_start();
 																				?>
                                             <?php
 																					echo ' <tr>
+                                                                                                <td>'.$rows['o_id'].'</td>
 																					           <td>'.$rows['username'].'</td>
 																								<td>'.$rows['title'].'</td>
 																								<td>'.$rows['quantity'].'</td>
@@ -227,11 +229,11 @@ session_start();
 																							echo '	<td>'.$rows['date'].'</td>';
 																							?>
                                             <td>
-                                                <a href="delete_orders.php?order_del=<?php echo $rows['o_id'];?>"
+                                                <!-- <a href="delete_orders.php?order_del=<?php echo $rows['o_id'];?>"
                                                     onclick="return confirm('Are you sure?');"
                                                     class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i
                                                         class="fa fa-trash-o"
-                                                        style="font-size:16px"></i></a>
+                                                        style="font-size:16px"></i></a> -->
                                                 <?php
 																								echo '<a href="view_order.php?user_upd='.$rows['o_id'].'" " class="btn btn-info btn-flat btn-addon btn-sm m-b-10 m-l-5"><i class="fa fa-edit"></i></a>
 																									</td>

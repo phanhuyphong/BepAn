@@ -4,7 +4,7 @@
 include("../connection/connect.php");
 error_reporting(0);
 session_start();
-if(empty($_SESSION["adm_id"]))
+if(empty($_SESSION["staff_id"]))
 {
 	header('location:index.php');
 }

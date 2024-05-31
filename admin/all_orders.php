@@ -116,6 +116,7 @@ session_start();
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="all_staff.php">Danh sách nhân viên
                                         </a></li>
+                                <li><a href="add_staff.php">Thêm nhân viên</a>
                                 <li><a href="all_users.php">Danh sách tài
                                         khoản</a></li>
                                 <li><a href="add_users.php">Thêm tài khoản</a>
@@ -178,6 +179,7 @@ session_start();
                                         class="table table-bordered table-striped">
                                         <thead class="thead-dark">
                                             <tr>
+                                                <th>Mã đơn hàng</th>
                                                 <th>Tên người dùng</th>
                                                 <th>Tên món</th>
                                                 <th>Số Lượng</th>
@@ -208,6 +210,7 @@ session_start();
 																				?>
                                             <?php
 																					echo ' <tr>
+                                                                                                <td>'.$rows['o_id'].'</td>
 																					           <td>'.$rows['username'].'</td>
 																								<td>'.$rows['title'].'</td>
 																								<td>'.$rows['quantity'].'</td>
